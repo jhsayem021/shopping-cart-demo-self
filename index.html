@@ -25,79 +25,79 @@
                     <p class="my-6 text-justify">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine with 8GB unified memory; 256GB SSD storage; Two Thunderbolt / USB 4 ports; Magic Mouse Magic Keyboard - US English</p>
                     <!-- specification section -->
                     <div class="my-28">
-                        <!-- memory specify -->
+                        <!-- memory specified -->
                         <div class="font-extrabold mb-16">
-                            <h1>Memory</h1>
+                            <h1>Memory (RAM)</h1>
                             <!-- button section -->
                             <div class="mt-4">
-                                <button class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">8GB unified memory</button>
-                                <button class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">16GB unified memory</button>
+                                <button id="8GB-memory-button" class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">8GB unified memory</button>
+                                <button id="16GB-memory-button" class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">16GB unified memory</button>
                             </div>
                         </div>
                         <!-- storage specify -->
                         <div class="font-extrabold mb-16">
-                            <h1>Storage</h1>
+                            <h1>Storage (ROM)</h1>
                             <!-- button section -->
                             <div class="mt-4">
-                                <button class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">256GB SSD storage</button>
-                                <button class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">512GB SSD storage</button>
-                                <button class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">1TB SSD storage</button>
+                                <button id="256GB-SSD-button"  class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">256GB SSD storage</button>
+                                <button id="512GB-SSD-button" class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">512GB SSD storage</button>
+                                <button id="1TB-SSD-button"  class="rounded py-1 px-6 border-2 border-gray-800 hover:text-white hover:bg-black">1TB SSD storage</button>
                             </div>
                         </div>
-                        <!-- delivery specify -->
+                        <!-- delivery specified  -->
                         <div class="font-extrabold mb-16">
                             <h1>Choose your delivery option</h1>
                             <!-- button section -->
                             <div class="mt-4">
-                                <button class="rounded py-1 px-4 border-2 border-gray-800 hover:text-white hover:bg-black">Friday, Aug 25 FREE Prime Delivery</button>
-                                <button class="rounded py-1 px-4 border-2 border-gray-800 hover:text-white hover:bg-black">Friday, Aug 21 Delivery Charge $20</button>
+                                <button id="free-delivery" class="rounded py-1 px-4 border-2 border-gray-800 hover:text-white hover:bg-black">Friday, Aug 25 FREE Prime Delivery</button>
+                                <button id="charged-delivery" class="rounded py-1 px-4 border-2 border-gray-800 hover:text-white hover:bg-black">Monday, Aug 21 Delivery Charge $20</button>
                             </div>
                         </div>
                     </div>
                     <!-- calculation section -->
-                    <div class="grid grid-cols-2 font-bold pb-8">
+                    <div class="grid grid-cols-2 font-bold text-2xl mb-10">
                         <div>
                             <div class="flex justify-between">
                                 <h1>Best Price</h1>
-                                <h1>$<span>1299</span></h1>
+                                <h1>$<span id="best-price">1299</span></h1>
                             </div>
                             <hr>
                             <div class="flex justify-between">
                                 <h1>Extra Memory Cost</h1>
-                                <h1>$<span>0</span></h1>
+                                <h1>$<span id="extra-memory-cost">0</span></h1>
                             </div>
                             <hr>
                             <div class="flex justify-between">
                                 <h1>Extra Storage Cost</h1>
-                                <h1>$<span>0</span></h1>
+                                <h1>$<span id="SSD-storage-cost">0</span></h1>
                             </div>
                             <hr>
                             <div class="flex justify-between">
                                 <h1>Delivery Charge</h1>
-                                <h1>$<span>0</span></h1>
+                                <h1>$<span id="delivery-charge">0</span></h1>
                             </div>
-                            <hr>
+                            <hr style="height: 3px; color:black;background-color:black">
                             <div class="flex justify-between">
                                 <h1>Total Price</h1>
-                                <h1>$<span>0</span></h1>
+                                <h1>$<span id="total-price">1299</span></h1>
                             </div>
                             <hr>
                         </div>
                     </div>
                     <!-- promo code section -->
-                    <div class="py-8">
-                        <h3>Apply Promo code</h3>
-                        <input  class="border"   type="text">
-                        <button class="bg-red-400 px-4">apply</button>
+                    <div class="font-bold mb-10 text-xl">
+                        <h3 class="mb-2">Apply Promo code</h3>
+                        <input id="promo-input" class="border p-2" type="text">
+                        <button id="promo-button" class="bg-red-500 py-2 px-5 text-white rounded">Apply</button>
                     </div>
-
                 </div>
             </div>
         </section>
-        <section class="py-8">
-            <hr>
-        <h1 class="text-center pt-4">Total: $<span>1299</span> </h1>
-        </section>
+        <!-- lower section -->
+        <section>
+        <hr style="height: 2px; color:gray; background-color:gray">
+        <h1 class="text-5xl text-center font-bold mb-10 mt-5">Total: $<span id="grand-total">1299</span></h1>
     </main>
+    <script src="javascript/functional.js"></script>
 </body>
 </html>
