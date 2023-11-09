@@ -1,7 +1,7 @@
 # Shooping-cart-demo
 
 Live site - https://shopping-cart-demo-mac.netlify.app/
-
+#promo code- ##stevekaku
 Description about site:
 
 * Its an shopping cart management demo site
